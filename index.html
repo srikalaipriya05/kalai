@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>web page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: url('hotel.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover ;
+            background-position: center;
+             }
+             .nav{
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: space-around;
+             }
+        ul{
+            margin:0;
+            padding: 0;
+            list-style-type: none;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px 10px;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        /* li{
+            margin:10px;
+            padding:10px;
+            width:0;
+        } */
+        li a{
+            text-decoration: none;
+            color:blue;
+            background-color: transparent;
+            text-transform: uppercase;
+            padding: 30px;
+
+            }
+         li a.active{
+            color: darkgoldenrod;
+        }
+        li a::after{
+            content:'';
+            
+
+        }
+         li a:hover::after{
+            color: darkred;
+        }
+        .con{
+            width:100%;
+            position: absolute;
+            font-family:'Lucida Sans','Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            top:50%;
+            transform:translateY(-50%);
+            text-align:center;
+             }
+        .con h1{
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        button{
+            border:none;
+            border-radius:5px;
+            color: blue;
+            background-color: cadetblue;
+            background: transparent;
+            font-size:20px;
+            display: inline-flex;
+            justify-content: space-between;
+            margin-top:20px ;
+        }
+        span{
+            background: turquoise;
+            height: 100%;
+            width:0;
+            border-radius: 20px;
+            position: absolute;
+            left:0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s ease;
+        }
+        button:hover span{
+            width:100%;
+        }
+        
+   </style>
+</head>
+<body>
+    <div class="nav">
+       <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">Bedroom</a></li>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">kitchen</a></li>
+            <li><a hef="#">backyard</a></li>
+        </ul>
+        <button class="but">login</button>
+        </div>
+        <div class="con">
+            <h1>design your home</h1>
+            <p>subscribe easy tutorial  youtube channel to wath more videos<br>
+            press the bell icons</p>
+    
+        <button><span></span>WATCHMORE</button>
+        <button><span></span>SUBSCRIBE</button>
+        </div>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+    
+</body>
+</html>
